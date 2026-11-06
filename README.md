@@ -2,7 +2,7 @@
 
 Portfólio estático em HTML, CSS e JavaScript, com tema escuro, opção clara e layout responsivo. Todas as dependências de apresentação, fontes, fotos e logos disponíveis estão em `dist/`.
 
-**Endereço de publicação:** https://lucascoiro.github.io/portifolio/
+**Endereço de publicação:** https://lucascoiro.github.io/portfolio/
 
 ## Conteúdo
 
@@ -28,11 +28,11 @@ Abra http://127.0.0.1:4328/.
 Para simular o subdiretório do GitHub Pages no PowerShell:
 
 ```powershell
-$env:PREVIEW_BASE_PATH='/portifolio'
+$env:PREVIEW_BASE_PATH='/portfolio'
 npm run preview
 ```
 
-Abra http://127.0.0.1:4328/portifolio/.
+Abra http://127.0.0.1:4328/portfolio/.
 
 ## Publicação com GitHub Pages
 
@@ -40,9 +40,9 @@ O workflow `.github/workflows/pages.yml` valida os arquivos e publica **somente 
 
 Na primeira configuração do repositório, use **Settings → Pages → Build and deployment → Source: GitHub Actions**. Aguarde a conclusão do workflow em Actions. O endereço é o mesmo indicado acima.
 
-Os caminhos de CSS, JavaScript, imagens e fontes são relativos, permitindo hospedar em `/portifolio/`. As rotas usam fragmentos (`#...`), sem depender de configuração de servidor ou redirecionamento de SPA. Exemplo:
+Os caminhos de CSS, JavaScript, imagens e fontes são relativos, permitindo hospedar em `/portfolio/`. As rotas usam fragmentos (`#...`), sem depender de configuração de servidor ou redirecionamento de SPA. Exemplo:
 
-https://lucascoiro.github.io/portifolio/#case/paciente-360/simulador-de-casos-clinicos/overview/1
+https://lucascoiro.github.io/portfolio/#case/paciente-360/simulador-de-casos-clinicos/overview/1
 
 ## Atualizar o conteúdo
 
