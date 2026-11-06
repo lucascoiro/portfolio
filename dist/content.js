@@ -83,13 +83,10 @@ O desafio de design era tornar a experiência acessível a esse público mais di
 
 As descobertas apontaram necessidades que iam além de depositar, converter e consultar saldo: os usuários queriam manter seus bitcoins na plataforma, ter acesso a um cartão virtual e encontrar mais possibilidades de uso para a conta.
 
-Esses aprendizados orientaram a evolução da proposta para múltiplas carteiras, cartões e moedas, com foco em clareza, educação e segurança percebida.
-
-Para facilitar os primeiros passos no aplicativo, foram criadas telas animadas de onboarding. A IA apoiou a criação dessas telas e animações, agilizando a produção e a exploração de alternativas para explicar os recursos do produto. O objetivo era tornar conceitos financeiros e operações com criptomoedas mais fáceis de compreender.`,
+Esses aprendizados orientaram a evolução da proposta para múltiplas carteiras, cartões e moedas, com foco em clareza, educação e segurança percebida.`,
         result: `A solução passou a conectar o saldo da conta a diferentes situações de uso, incluindo pagamentos, recargas de celular, compra de gift cards e transferências. Também ofereceu conversão automática de bitcoins para moeda local e a possibilidade de realizar depósitos diretamente na conta.
 
 Essas entregas ampliaram as possibilidades de utilização da UZZO no cotidiano. O impacto sobre conversão e abandono, assim como a contribuição do onboarding para a compreensão do produto, ainda precisa ser demonstrado com métricas ou resultados de avaliação.`,
-        emphasis: { solution: ['A IA apoiou a criação dessas telas e animações, agilizando a produção e a exploração de alternativas para explicar os recursos do produto.'] },
         media: { type: 'image', src: 'images/uzzo-app.jpg', alt: 'Aplicativo UZZO com carteiras digitais e cartão UZZO pay.', caption: '' }
       }]
     }
