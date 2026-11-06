@@ -65,7 +65,7 @@ Esses resultados apontam para maior engajamento e conclusão das atividades.`,
         emphasis: {
           result: ['60% na conclusão dos casos simulados interativos em comparação com exercícios e atividades de aulas tradicionais']
         },
-        media: { type: 'diagram', variant: 4, label: 'Simulação clínica', caption: 'Esquema conceitual da jornada' }
+        media: { type: 'video', src: 'videos/paciente360.mp4', alt: 'Demonstração do Simulador de Casos Clínicos — Paciente 360', caption: '' }
       }]
     },
     {

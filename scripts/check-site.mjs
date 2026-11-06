@@ -33,7 +33,7 @@ for(const company of portfolio.companies){
     if(ids.has(product.id))throw Error(`Duplicate product: ${company.id}/${product.id}`);
     ids.add(product.id);
     for(const key of ['id','title','description','problem','solution','result'])if(!product[key])throw Error(`Missing ${key}: ${company.id}/${product.id}`);
-    if(product.media?.type==='image')requireAsset(product.media.src);
+    if(['image','video'].includes(product.media?.type))requireAsset(product.media.src);
   }
 }
 if(!portfolio.profile.linkedin.startsWith('https://www.linkedin.com/'))throw Error('Invalid LinkedIn URL.');

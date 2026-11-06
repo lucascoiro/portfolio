@@ -75,6 +75,7 @@
     const media=product.media||{type:'diagram'};$('.product-media').dataset.mediaType=media.type;$('#media-label').textContent=media.label||'Visual';
     $('#media-caption').textContent=media.caption||(media.type==='diagram'?'Esquema conceitual':'');
     if(media.type==='image'&&media.src){const image=element('img','media-image');image.src=media.src;image.alt=media.alt||product.title;image.onerror=()=>{mount.replaceChildren(element('p','media-error','Imagem indisponível. O conteúdo do case continua disponível ao lado.'));};mount.append(image);}
+    else if(media.type==='video'&&media.src){const video=element('video','media-video');video.src=media.src;video.controls=true;video.playsInline=true;video.preload='metadata';video.setAttribute('aria-label',media.alt||product.title);video.append(document.createTextNode('Seu navegador não suporta este vídeo.'));video.onerror=()=>{mount.replaceChildren(element('p','media-error','Vídeo indisponível. O conteúdo do case continua disponível ao lado.'));};mount.append(video);mediaDispose=()=>{video.pause();video.removeAttribute('src');video.load();};}
     else if(media.type==='three'){
       try{const {mountProductScene}=await import('./product-scene.js');if(revision!==mediaRevision)return;const dispose=await mountProductScene(mount,{label:media.alt||`Visual 3D de ${product.title}`,variant:media.variant||0});if(revision!==mediaRevision)dispose?.();else mediaDispose=dispose;}
       catch{if(revision===mediaRevision)mount.append(element('p','media-error','Visual 3D indisponível neste navegador.'));}
