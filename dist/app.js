@@ -28,7 +28,7 @@
     return {type:'home'};
   }
   function announce(text){$('#announcement').textContent=text;}
-  function logoElement(company,compact=false){if(!company.logo)return null;const wrapper=element('span','brand-logo'+(company.logo.symbol?' brand-symbol':'')+(compact?' compact-logo':''));const image=element('img');image.src=company.logo.src;image.alt=company.logo.alt;image.decoding='async';wrapper.append(image);return wrapper;}
+  function logoElement(company,compact=false){if(!company.logo)return null;const wrapper=element('span','brand-logo'+(company.logo.symbol?' brand-symbol':'')+(company.logo.square?' brand-square':'')+(compact?' compact-logo':''));const image=element('img');image.src=company.logo.src;image.alt=company.logo.alt;image.decoding='async';wrapper.append(image);return wrapper;}
   function renderNav(){
     const nav=$('#chapter-nav');nav.replaceChildren();
     const link=(hash,number,title,current)=>{const a=element('a');a.href=hash;a.append(document.createTextNode(title));a.dataset.brand=companies.find(c=>companyHash(c)===hash)?.id||'portfolio';if(current)a.setAttribute('aria-current','page');nav.append(a);};
@@ -72,7 +72,7 @@
   }
   async function renderMedia(product){
     const revision=++mediaRevision;mediaDispose?.();mediaDispose=null;const mount=$('#media-mount');mount.replaceChildren();
-    const media=product.media||{type:'diagram'};$('#media-label').textContent=media.label||'Visual';
+    const media=product.media||{type:'diagram'};$('.product-media').dataset.mediaType=media.type;$('#media-label').textContent=media.label||'Visual';
     $('#media-caption').textContent=media.caption||(media.type==='diagram'?'Esquema conceitual':'');
     if(media.type==='image'&&media.src){const image=element('img','media-image');image.src=media.src;image.alt=media.alt||product.title;image.onerror=()=>{mount.replaceChildren(element('p','media-error','Imagem indisponível. O conteúdo do case continua disponível ao lado.'));};mount.append(image);}
     else if(media.type==='three'){

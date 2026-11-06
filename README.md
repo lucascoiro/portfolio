@@ -10,7 +10,7 @@ Portfólio estático em HTML, CSS e JavaScript, com tema escuro, opção clara e
 | --- | --- | --- | --- |
 | PicPay | 2026 | `#3FAB67` | 4 |
 | Paciente 360 | 2022 | `#FB5C47` | 1 |
-| Uzzo | 2019 | `#FF0076` | Em preparação |
+| Uzzo | 2019 | `#FF0076` | 1 |
 
 Os anos aparecem nas páginas das empresas, na seleção de empresas e na identificação dos cases. O conteúdo de cada produto é separado em Visão geral, Desafio, Solução e Resultados; cada aba mostra somente seu próprio texto.
 
@@ -65,6 +65,7 @@ Mídias podem ser imagens locais (`type: 'image'`), cenas Three.js (`type: 'thre
 
 ## Identidade e mídias
 
-DM Sans e Three.js estão incluídos com suas licenças. Os logos e marcas pertencem às respectivas empresas. O símbolo do PicPay veio de seu site oficial; o logo Paciente 360 e a foto foram fornecidos pelo titular do portfólio. O logo da Uzzo permanece pendente. Os diagramas são conceituais e não representam telas oficiais.
+DM Sans e Three.js estão incluídos com suas licenças. Os logos e marcas pertencem às respectivas empresas. O símbolo do PicPay veio de seu site oficial; o logo Paciente 360 e a foto foram fornecidos pelo titular do portfólio. O logo da Uzzo e a imagem do aplicativo foram fornecidos pelo titular do portfólio. Os diagramas são conceituais e não representam telas oficiais.
 
 O pacote não contém credenciais, arquivos de configuração do Sites ou dependências `node_modules`.
+

@@ -68,7 +68,31 @@ Esses resultados apontam para maior engajamento e conclusão das atividades.`,
         media: { type: 'diagram', variant: 4, label: 'Simulação clínica', caption: 'Esquema conceitual da jornada' }
       }]
     },
-    { id: 'uzzo', name: 'Uzzo', year: 2019, brand: '#FF0076', role: '', description: '', products: [], pending: true }
+    {
+      id: 'uzzo', name: 'Uzzo', year: 2019, brand: '#FF0076',
+      role: 'UX/UI Design',
+      description: 'Pesquisa com usuários, prototipação e evolução da experiência de uma conta digital com múltiplas carteiras, cartões e moedas.',
+      pending: false,
+      products: [{
+        id: 'aplicativo-uzzo', title: 'Aplicativo UZZO', shortTitle: 'Aplicativo UZZO',
+        description: `A UZZO é uma conta digital que conecta criptomoedas a transações do dia a dia. Sua proposta de Super App reúne pagamentos com QR Code, recargas de celular, créditos para mobilidade e pagamento de contas, além de um cartão recarregável vinculado à conta.`,
+        problem: `Após o lançamento, a plataforma passou a atrair pessoas com diferentes níveis de familiaridade com criptomoedas, ampliando seu público para além dos entusiastas.
+
+O desafio de design era tornar a experiência acessível a esse público mais diverso, explicando o funcionamento dos recursos e facilitando as transações. Para o negócio, os objetivos eram aumentar a conversão e reduzir o abandono das jornadas.`,
+        solution: `A investigação combinou sessões com protótipos interativos, questionários com clientes e comunidades nas redes sociais e análise de soluções do mercado. Participaram usuários com diferentes percepções sobre o produto, permitindo identificar dúvidas, dificuldades e expectativas.
+
+As descobertas apontaram necessidades que iam além de depositar, converter e consultar saldo: os usuários queriam manter seus bitcoins na plataforma, ter acesso a um cartão virtual e encontrar mais possibilidades de uso para a conta.
+
+Esses aprendizados orientaram a evolução da proposta para múltiplas carteiras, cartões e moedas, com foco em clareza, educação e segurança percebida.
+
+Para facilitar os primeiros passos no aplicativo, foram criadas telas animadas de onboarding. A IA apoiou a criação dessas telas e animações, agilizando a produção e a exploração de alternativas para explicar os recursos do produto. O objetivo era tornar conceitos financeiros e operações com criptomoedas mais fáceis de compreender.`,
+        result: `A solução passou a conectar o saldo da conta a diferentes situações de uso, incluindo pagamentos, recargas de celular, compra de gift cards e transferências. Também ofereceu conversão automática de bitcoins para moeda local e a possibilidade de realizar depósitos diretamente na conta.
+
+Essas entregas ampliaram as possibilidades de utilização da UZZO no cotidiano. O impacto sobre conversão e abandono, assim como a contribuição do onboarding para a compreensão do produto, ainda precisa ser demonstrado com métricas ou resultados de avaliação.`,
+        emphasis: { solution: ['A IA apoiou a criação dessas telas e animações, agilizando a produção e a exploração de alternativas para explicar os recursos do produto.'] },
+        media: { type: 'image', src: 'images/uzzo-app.jpg', alt: 'Aplicativo UZZO com carteiras digitais e cartão UZZO pay.', caption: '' }
+      }]
+    }
   ]
 };
 
@@ -76,6 +100,7 @@ Esses resultados apontam para maior engajamento e conclusão das atividades.`,
 
 window.PORTFOLIO.companies[0].logo = { src: 'logos/picpay.svg', alt: 'Logo PicPay', symbol: true, source: 'https://picpay.com/icons/logo-picpay.svg' };
 window.PORTFOLIO.companies[1].logo = { src: 'logos/paciente-360.png', alt: 'Logo Paciente 360', source: 'https://www.paciente360.com.br/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.3fc658cb.png&w=256&q=75' };
+window.PORTFOLIO.companies[2].logo = { src: 'logos/uzzo.png', alt: 'Logo UZZO pay', square: true };
 window.PORTFOLIO.profile = {
   name: 'Lucas Coiro',
   linkedin: 'https://www.linkedin.com/in/lucascoiro/',
