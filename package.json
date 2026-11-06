@@ -1,0 +1,12 @@
+{
+  "name": "lucas-coiro-portifolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Portfólio estático de Product Design de Lucas Coiro",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "check": "node scripts/check-site.mjs",
+    "preview": "node preview.cjs"
+  }
+}
